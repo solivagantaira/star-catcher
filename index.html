@@ -6,6 +6,13 @@
 <style>
 :root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,sans-serif}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0%,#26326d,#0b1025 70%);color:#f4f5ff;display:flex;justify-content:center;align-items:center;padding:22px}.shell{width:min(100%,610px)}h1{font-size:clamp(1.7rem,5vw,2.5rem);margin:0 0 4px;text-align:center}.lead{text-align:center;color:#bdc7fa;margin:0 0 18px}.panel{border:1px solid #59669d88;border-radius:22px;background:#111939dd;padding:16px;box-shadow:0 20px 70px #01061580}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.stat{border-radius:12px;background:#222d57;padding:9px;text-align:center}.stat small{display:block;color:#aeb8e8;font-size:.75rem}.stat strong{display:block;font-size:1.45rem;font-variant-numeric:tabular-nums}canvas{width:100%;height:auto;display:block;border-radius:14px;background:#0c1431;touch-action:none;border:1px solid #3f518c}.controls{display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap}button{border:0;border-radius:12px;background:#8e7bff;color:#0a0e25;font-weight:800;padding:12px 21px;cursor:pointer;font-size:1rem}button.secondary{background:#2c3b73;color:#f5f6ff}button:focus-visible{outline:3px solid white;outline-offset:3px}.instructions{text-align:center;font-size:.89rem;color:#c5cef3;line-height:1.65}.note{text-align:center;color:#9eaad6;font-size:.78rem;margin-top:13px}
 </style>
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-5S6DD36K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
 </head>
 <body><main class="shell"><h1>✨ Star Catcher</h1><p class="lead">Catch the stars. Dodge the meteors. Beat your best score!</p><section class="panel"><div class="stats"><div class="stat"><small>Score</small><strong id="score">0</strong></div><div class="stat"><small>Lives</small><strong id="lives">♥ ♥ ♥</strong></div><div class="stat"><small>Best</small><strong id="best">0</strong></div></div><canvas id="game" width="540" height="470" aria-label="Star Catcher game area"></canvas><div class="controls"><button id="start">Start Game</button><button id="pause" class="secondary">Pause</button></div><p class="instructions">Move using <b>← →</b> or <b>A D</b>, or drag your finger / mouse on the game field.<br>Catch <b style="color:#ffe18d">gold stars (+10)</b> and avoid <b style="color:#ff958e">red meteors (−1 life)</b>.</p></section><p class="note">100% offline • No libraries • No account • Score saved only in this browser</p></main>
 <script>
